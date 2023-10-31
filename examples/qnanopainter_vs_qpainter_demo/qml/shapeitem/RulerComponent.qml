@@ -54,8 +54,7 @@ Item {
         'readonly property real h3: root.h3;' +
         'readonly property real itemWidth: root.width;' +
         'readonly property real itemHeight: root.height;' +
-        'asynchronous: true;' +
-        'vendorExtensionsEnabled: mainWindow.settingVendorExtensionsEnabled;';
+        'asynchronous: mainWindow.settingAsyncEnabled;';
         newObject += 'ShapePath {' +
                 'strokeColor: "#E0E0E0";' +
                 'fillColor: "transparent";' +

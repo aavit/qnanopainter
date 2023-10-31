@@ -17,8 +17,7 @@ Shape {
 
     // Note: enabling asynchronous causes bottom Rectangle to sometimes appear
     // under ShapePath when "Render count" > 1.
-    //asynchronous: true
-    vendorExtensionsEnabled: mainWindow.settingVendorExtensionsEnabled
+    asynchronous: mainWindow.settingAsyncEnabled
 
     rotation: Math.sin(time)*20
 

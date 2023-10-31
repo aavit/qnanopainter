@@ -25,9 +25,7 @@ Item {
         'readonly property real dotSize: root.dotSize;' +
         'readonly property real itemWidth: root.width;' +
         'readonly property real itemHeight: root.height;' +
-        // Note: asynchronous disabled for now, see QTBUG-64508
-        //'asynchronous: true;' +
-        'vendorExtensionsEnabled: mainWindow.settingVendorExtensionsEnabled;\n';
+        'asynchronous: mainWindow.settingAsyncEnabled;\n';
 
         // Draw graph background area
         newObject += 'ShapePath {' +

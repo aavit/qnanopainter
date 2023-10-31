@@ -33,11 +33,10 @@ Item {
     Shape {
         // Dummy Shape item to request used rendererType
         id: dummyShape
-        vendorExtensionsEnabled: mainWindow.settingVendorExtensionsEnabled
         onRendererTypeChanged: {
             mainWindow.settingShapeBackendName =
                     (rendererType === 1) ? "GeometryRenderer"
-                                         : (rendererType === 2) ? "NvprRenderer"
+                                         : (rendererType === 4) ? "CurveRenderer"
                                                                 : (rendererType === 3) ? "SoftwareRenderer"
                                                                                        : "UnknownRenderer";
         }

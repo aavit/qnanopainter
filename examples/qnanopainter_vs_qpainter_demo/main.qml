@@ -29,7 +29,7 @@ Window {
     property bool settingHighQualityRendering: false
     property bool settingFBORendering: false
     property bool settingAnimateSize: false
-    property bool settingVendorExtensionsEnabled: true
+    property bool settingAsyncEnabled: false
     property bool settingShowDebug: false
     property string settingContextName: "(unknown)"
     property string settingQNanoBackendName: "(unknown)"
